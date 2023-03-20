@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        margin: 0;
+        padding: 16px;
+        width: 260px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0 0 16px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 16px;
+      }
+
+      button {
+        background-color: #3d5afe;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 8px 16px;
+        transition: background-color 0.2s ease-in-out,
+          transform 0.2s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #283593;
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+
+      input[type='text'] {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .prefix-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .prefix-label {
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GPT-SummaryMaster</h1>
+    <p class="prefix-container">
+      <label for="prefix" class="prefix-label">Prefix: </label>
+      <input type="text" id="prefix" />
+    </p>
+    <button id="capture">Capture and Open</button>
+    <button id="capture-only">Capture</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
